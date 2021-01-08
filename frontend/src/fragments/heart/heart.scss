@@ -1,0 +1,66 @@
+$ecma-heart-size: 128px !default;
+$ecma-heart-color: red !default;
+
+.ecma-heart-wrapper {
+    position: relative;
+    margin-top: $ecma-heart-size / 2;
+
+    .ecma-heart {
+        background-color: $ecma-heart-color;
+        display: inline-block;
+        height: $ecma-heart-size;
+        margin: 0 $ecma-heart-size / 2;
+        position: relative;
+        top: 0;
+        transform: rotate(-45deg);
+        width: $ecma-heart-size;
+    
+        &:before, &:after {
+            content: "";
+            background-color: $ecma-heart-color;
+            border-radius: 50%;
+            height: $ecma-heart-size;
+            position: absolute;
+            width: $ecma-heart-size;
+        }
+    
+        &:before {
+            top: -($ecma-heart-size / 2);
+            left: 0;
+        }
+    
+        &:after {
+            left: ($ecma-heart-size / 2);
+            top: 0;
+        }
+    }
+
+    .ecma-heart-content {
+        position: absolute;
+        top: - $ecma-heart-size / 3;
+
+        &__item {
+            position: absolute;
+            color: #fff;
+            white-space: nowrap;
+
+            &.pos- {
+                &0 { top: 4px;         left: 64px;     font-size: 18px; }
+                &1 { top: 50px;         left: 30px;     font-size: 30px; }
+                &2 { top: 148px;       left: 107px;     font-size: 26px; }
+                &3 { top: 40px;         left: 175px;    font-size: 23px;}
+                &4 { top: 108px;        left: 167px;    font-size: 14px; }
+                &5 { top: 13px;       left: 142px;     font-size: 19px; }
+                &6 { top: 51px;       left: 100px;     font-size: 18px; }
+                &7 { top: 105px;        left: 84px;     font-size: 20px;}
+                &8 { top: 73px;         left: 91px;     font-size: 11px; }
+                &9 { top: 133px;        left: 82px;     font-size: 14px;}
+                &10 { top: 70px;       left: 150px;     font-size: 10px; }
+                &11 { top: 24px;        left: 52px;     font-size: 8px; }
+                &12 { top: 128px;       left: 127px;    font-size: 7px; }
+                &13 { top: 84px;       left: 53px;     font-size: 19px; }
+                &14 { top: 34px;       left: 36px;     font-size: 14px; }
+            }
+        }
+    } 
+}

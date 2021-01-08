@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install-dep:all": "npm run install-dep:services",
-    "install-dep:services": "cd ./services && npm i"
+    "install-dep:all": "npm run install-dep:services && npm run install-dep:frontend",
+    "install-dep:services": "cd ./services && npm i",
+    "install-dep:frontend": "cd ./frontend && npm i"
   },
   "repository": {
     "type": "git",

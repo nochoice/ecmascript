@@ -3,4 +3,7 @@
 * https://tc39.es/
 * https://github.com/tc39
 * https://github.com/getify/You-Dont-Know-JS
-* 
+* https://en.wikipedia.org/wiki/Comparison_of_web_browsers
+* https://en.wikipedia.org/wiki/ECMAScript#11th_Edition_%E2%80%93_ECMAScript_2020
+* https://en.wikipedia.org/wiki/Timeline_of_web_browsers
+* https://github.com/lukehoban/es6features
